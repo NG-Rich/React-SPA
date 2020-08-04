@@ -3,7 +3,12 @@ import { Layout } from "../layout";
 
 const Home = () => (
   <Layout>
-    This is the home page
+    <h1 className="text-2xl">
+      React SPA Home
+    </h1>
+    <p>
+      Welcome to the Bay!
+    </p>
   </Layout>
 )
 
