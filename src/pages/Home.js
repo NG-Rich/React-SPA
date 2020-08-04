@@ -7,7 +7,7 @@ const Home = () => (
       React SPA Home
     </h1>
     <p>
-      Welcome to the Bay!
+      Here's a simple SPA built with React and stylized with Tailwind!
     </p>
   </Layout>
 )

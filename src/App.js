@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, About, Contact } from "./pages";
-import { Nav } from "./layout";
+import { Nav, Footer } from "./layout";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,20 +9,25 @@ import {
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+    <div className="flex flex-col min-h-screen">
+      <Router>
+        <Nav />
+
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
